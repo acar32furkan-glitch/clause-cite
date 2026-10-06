@@ -1,0 +1,113 @@
+{
+  "cases": [
+    {
+      "name": "tedarik sözleşmesi (anchor ile)",
+      "documents": ["../data/tedarik_sozlesmesi.txt"],
+      "anchor": "2026-01-01",
+      "expected": {
+        "DOC1-0001": ["OBLIGATION", "MUST"],
+        "DOC1-0002": ["OBLIGATION", "MUST"],
+        "DOC1-0003": ["OBLIGATION", "MUST"],
+        "DOC1-0004": ["OBLIGATION", "MUST"],
+        "DOC1-0005": ["OBLIGATION", "MUST"],
+        "DOC1-0006": ["OBLIGATION", "MAY"],
+        "DOC1-0007": ["OBLIGATION", "MAY"],
+        "DOC1-0008": ["PROHIBITION", "MUST"],
+        "DOC1-0009": ["DOCUMENT_REQUIRED", "MUST"],
+        "DOC1-0010": ["OBLIGATION", "MUST"],
+        "DOC1-0011": ["PROHIBITION", "MUST"],
+        "DOC1-0012": ["PROHIBITION", "MUST"],
+        "DOC1-0013": ["PROHIBITION", "MUST"],
+        "DOC1-0014": ["OBLIGATION", "MUST"],
+        "DOC1-0015": ["OBLIGATION", "MUST"],
+        "DOC1-0016": ["PROHIBITION", "MUST"],
+        "DOC1-0017": ["MONEY", "MAY"],
+        "DOC1-0018": ["DEADLINE", "MAY"],
+        "DOC1-0019": ["OBLIGATION", "MAY"]
+      },
+      "expect_unresolved": []
+    },
+    {
+      "name": "tedarik sözleşmesi (anchor yok, göreli terminler çözülemez)",
+      "documents": ["../data/tedarik_sozlesmesi.txt"],
+      "anchor": null,
+      "expected": {
+        "DOC1-0001": ["OBLIGATION", "MUST"],
+        "DOC1-0002": ["OBLIGATION", "MUST"],
+        "DOC1-0003": ["OBLIGATION", "MUST"],
+        "DOC1-0004": ["OBLIGATION", "MUST"],
+        "DOC1-0005": ["OBLIGATION", "MUST"],
+        "DOC1-0006": ["OBLIGATION", "MAY"],
+        "DOC1-0007": ["OBLIGATION", "MAY"],
+        "DOC1-0008": ["PROHIBITION", "MUST"],
+        "DOC1-0009": ["DOCUMENT_REQUIRED", "MUST"],
+        "DOC1-0010": ["OBLIGATION", "MUST"],
+        "DOC1-0011": ["PROHIBITION", "MUST"],
+        "DOC1-0012": ["PROHIBITION", "MUST"],
+        "DOC1-0013": ["PROHIBITION", "MUST"],
+        "DOC1-0014": ["OBLIGATION", "MUST"],
+        "DOC1-0015": ["OBLIGATION", "MUST"],
+        "DOC1-0016": ["PROHIBITION", "MUST"],
+        "DOC1-0017": ["MONEY", "MAY"],
+        "DOC1-0018": ["DEADLINE", "MAY"],
+        "DOC1-0019": ["OBLIGATION", "MAY"]
+      },
+      "expect_unresolved": ["DOC1-0005", "DOC1-0015", "DOC1-0018"]
+    },
+    {
+      "name": "supply agreement (EN)",
+      "documents": ["../data/supply_agreement.txt"],
+      "anchor": "2026-01-01",
+      "expected": {
+        "DOC1-0001": ["OBLIGATION", "MUST"],
+        "DOC1-0002": ["DOCUMENT_REQUIRED", "MUST"],
+        "DOC1-0003": ["OBLIGATION", "MAY"],
+        "DOC1-0004": ["OBLIGATION", "MUST"],
+        "DOC1-0005": ["PROHIBITION", "MUST"],
+        "DOC1-0006": ["OBLIGATION", "MUST"],
+        "DOC1-0007": ["OBLIGATION", "MAY"],
+        "DOC1-0008": ["PROHIBITION", "MUST"],
+        "DOC1-0009": ["OBLIGATION", "MUST"],
+        "DOC1-0010": ["PROHIBITION", "MUST"],
+        "DOC1-0011": ["DOCUMENT_REQUIRED", "MUST"],
+        "DOC1-0012": ["OBLIGATION", "MUST"],
+        "DOC1-0013": ["OBLIGATION", "MAY"],
+        "DOC1-0014": ["DEFINITION", "MAY"],
+        "DOC1-0015": ["OBLIGATION", "MUST"]
+      },
+      "expect_unresolved": []
+    },
+    {
+      "name": "hizmet şartnamesi (Md. numaraları ve vb. kısaltması)",
+      "documents": ["../data/hizmet_sartnamesi.txt"],
+      "anchor": "2026-01-01",
+      "expected": {
+        "DOC1-0001": ["DEFINITION", "MAY"],
+        "DOC1-0002": ["DEFINITION", "MAY"],
+        "DOC1-0003": ["OBLIGATION", "MUST"],
+        "DOC1-0004": ["OBLIGATION", "MUST"],
+        "DOC1-0005": ["OBLIGATION", "MUST"],
+        "DOC1-0006": ["PROHIBITION", "MUST"],
+        "DOC1-0007": ["OBLIGATION", "MUST"],
+        "DOC1-0008": ["OBLIGATION", "MAY"],
+        "DOC1-0009": ["OBLIGATION", "MUST"],
+        "DOC1-0010": ["PROHIBITION", "MUST"],
+        "DOC1-0011": ["MONEY", "MAY"],
+        "DOC1-0012": ["OBLIGATION", "MAY"],
+        "DOC1-0013": ["DEADLINE", "MAY"],
+        "DOC1-0014": ["DOCUMENT_REQUIRED", "MUST"]
+      },
+      "expect_unresolved": []
+    },
+    {
+      "name": "belirsiz taraf ve göreli termin (unresolved kalır)",
+      "documents": ["docs/belirsiz_taraflar.txt"],
+      "anchor": null,
+      "expected": {
+        "DOC1-0001": ["OBLIGATION", "MUST"],
+        "DOC1-0002": ["OBLIGATION", "MUST"]
+      },
+      "expect_unresolved": ["DOC1-0001", "DOC1-0002"]
+    }
+  ]
+}
