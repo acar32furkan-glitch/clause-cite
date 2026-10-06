@@ -44,7 +44,11 @@ def _format_item(item: Item) -> list[str]:
     zorunlu değildir, tanımdır — kip etiketi basmak yanlış anlam kurardı. Kip bilgisi JSON/CSV
     çıktısında korunur (veri kaybı yok), yalnızca insan tarafında gösterilmez.
     """
-    label = "—" if item.kind is ItemKind.DEFINITION else item.modality.label_tr
+    label = item.modality.label_tr
+    if item.kind is ItemKind.DEFINITION or item.kind is ItemKind.PROHIBITION:
+        # Tanımda kip anlamsız; yasakta kip zaten "yapmama"dır ve tür başlığı bunu söyler.
+        # "YASAK grubunda ZORUNLU" okuması çelişki gibi görünüyordu → etiket gösterilmez.
+        label = "—"
     head = f"  • [{item.id}] {label}"
     if item.actor is not None:
         head += f" · aktör: {item.actor}"
@@ -72,7 +76,7 @@ def render_text(result: ExtractionResult, *, max_items: int | None = None) -> st
     lines = ["ÇIKARILAN AKSİYON MADDELERİ", ""]
     lines.append(
         f"  belge: {len(result.documents)} · cümle: {result.sentences} · madde: {len(result.items)}"
-        f" · çözülemeyen: {result.unresolved_count()}"
+        f" · çözülemeyen: {result.unresolved_count()} · aktörsüz: {result.actorless_count()}"
     )
     if "eliminated" in result.stats:
         lines.append(f"  --strict ile elenen madde: {result.eliminated_count()}")
@@ -100,7 +104,10 @@ def render_markdown(result: ExtractionResult) -> str:
         "### Kanıtlı aksiyon maddeleri",
         "",
         f"- belge: {len(result.documents)} · cümle: {result.sentences} · madde: {len(result.items)}",
-        f"- çözülemeyen: {result.unresolved_count()} · alıntı kapsamı: %{citation_coverage(result) * 100:.0f}",
+        (
+            f"- çözülemeyen: {result.unresolved_count()} · aktörsüz: {result.actorless_count()}"
+            f" · alıntı kapsamı: %{citation_coverage(result) * 100:.0f}"
+        ),
         "",
         "| Kimlik | Tür | Kip | Taraf | Termin | Atıf |",
         "|--------|-----|-----|-------|--------|------|",

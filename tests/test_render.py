@@ -131,6 +131,20 @@ def test_render_text_aktoru_belirtilmemis_madde() -> None:
     assert "aktör: (çözülemedi)" not in text
 
 
+def test_render_text_yasak_maddesinde_kip_etiketi_yok() -> None:
+    """Yasak grubunda 'ZORUNLU' etiketi çelişki gibi okunuyordu: kip etiketi gösterilmemeli."""
+    result = extract((doc("Sigara içmek yasaktır."),))
+    text = render_text(result)
+    assert "YASAK (prohibition)" in text
+    assert "] — ·" in text or "] —" in text
+
+
+def test_render_text_ozet_aktorsuz_sayisini_gosterir() -> None:
+    """Özet, sahipsiz yükümlülükleri (aktörü metinde hiç geçmeyen) ayrı saymalı."""
+    result = extract((doc("Primler zamanında ödenmelidir."),))
+    assert "aktörsüz: 1" in render_text(result)
+
+
 def test_render_json_payload_sozlesmesi() -> None:
     payload = render_json_payload(sample_result(), anchor=ANCHOR)
     assert set(payload) >= {

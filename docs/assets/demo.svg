@@ -8,14 +8,14 @@
   <text x="82" y="24" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12.5">clause-cite extract — örnek belgeler</text>
   <text x="22" y="62" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">ÇIKARILAN AKSİYON MADDELERİ</text>
   <text x="22" y="81" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve"></text>
-  <text x="22" y="100" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  belge: 3 · cümle: 85 · madde: 48 · çözülemeyen: 0</text>
+  <text x="22" y="100" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  belge: 3 · cümle: 85 · madde: 48 · çözülemeyen: 0 · aktörsüz: 19</text>
   <text x="22" y="119" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve"></text>
   <text x="22" y="138" fill="#f87171" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">YASAK (prohibition) — 2 madde</text>
-  <text x="22" y="157" fill="#fbbf24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0006] ZORUNLU · aktör: (metinde belirtilmemiş) · güven: DÜŞÜK · İNCELEME GEREKİYOR</text>
+  <text x="22" y="157" fill="#fbbf24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0006] — · aktör: (metinde belirtilmemiş) · güven: DÜŞÜK · İNCELEME GEREKİYOR</text>
   <text x="22" y="176" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:17-17</text>
   <text x="22" y="195" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: "Personelin çalışma saatleri içinde alkol kullanması yasaktır."</text>
   <text x="22" y="214" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: tr_yasaktir</text>
-  <text x="22" y="233" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0010] ZORUNLU · aktör: Yüklenici · güven: YÜKSEK</text>
+  <text x="22" y="233" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0010] — · aktör: Yüklenici · güven: YÜKSEK</text>
   <text x="22" y="252" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:23-23</text>
   <text x="22" y="271" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: "Yüklenici, denetime engel olmamalıdır."</text>
   <text x="22" y="290" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: tr_melidir, tr_mamali</text>

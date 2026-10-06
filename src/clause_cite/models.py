@@ -174,6 +174,15 @@ class ExtractionResult(BaseModel):
         """Tarafı ya da tarihi çözülemeyen madde sayısı."""
         return sum(1 for item in self.items if item.is_unresolved)
 
+    def actorless_count(self) -> int:
+        """Tarafı metinde hiç geçmeyen (sahip atanması gereken) madde sayısı.
+
+        ``unresolved_count()`` "taraf var ama çözülemedi" durumunu sayar; bu metot edilgen cümlelerde
+        tarafın hiç anılmadığı maddeleri sayar. İkisi karıştırılmamalıdır: biri belirsiz referans,
+        diğeri sahipsiz yükümlülüktür — aksiyon alacak kişi için ikisi farklı sorundur.
+        """
+        return sum(1 for item in self.items if item.actor is None and item.actor_resolved)
+
     def unresolved_ids(self) -> tuple[str, ...]:
         """Çözülemeyen maddelerin kimlikleri (altın set karşılaştırması için)."""
         return tuple(item.id for item in self.items if item.is_unresolved)
