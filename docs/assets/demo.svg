@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1285" viewBox="0 0 760 1285" role="img" aria-label="clause-cite extract — örnek belgeler">
+  <rect width="760" height="1285" rx="10" fill="#0b1120"/>
+  <rect width="760" height="38" rx="10" fill="#1e293b"/>
+  <rect y="28" width="760" height="10" fill="#1e293b"/>
+  <circle cx="20" cy="19" r="6" fill="#f87171"/>
+  <circle cx="40" cy="19" r="6" fill="#fbbf24"/>
+  <circle cx="60" cy="19" r="6" fill="#4ade80"/>
+  <text x="82" y="24" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12.5">clause-cite extract — örnek belgeler</text>
+  <text x="22" y="62" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">ÇIKARILAN AKSİYON MADDELERİ</text>
+  <text x="22" y="81" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve"></text>
+  <text x="22" y="100" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  belge: 3 · cümle: 85 · madde: 48 · çözülemeyen: 0</text>
+  <text x="22" y="119" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve"></text>
+  <text x="22" y="138" fill="#f87171" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">YASAK (prohibition) — 2 madde</text>
+  <text x="22" y="157" fill="#fbbf24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0006] ZORUNLU · aktör: (metinde belirtilmemiş) · güven: DÜŞÜK · İNCELEME GEREKİYOR</text>
+  <text x="22" y="176" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:17-17</text>
+  <text x="22" y="195" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: "Personelin çalışma saatleri içinde alkol kullanması yasaktır."</text>
+  <text x="22" y="214" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: tr_yasaktir</text>
+  <text x="22" y="233" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0010] ZORUNLU · aktör: Yüklenici · güven: YÜKSEK</text>
+  <text x="22" y="252" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:23-23</text>
+  <text x="22" y="271" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: "Yüklenici, denetime engel olmamalıdır."</text>
+  <text x="22" y="290" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: tr_melidir, tr_mamali</text>
+  <text x="22" y="309" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve"></text>
+  <text x="22" y="328" fill="#7dd3fc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">YÜKÜMLÜLÜK (obligation) — 7 madde</text>
+  <text x="22" y="347" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0003] ZORUNLU · aktör: Yüklenici · güven: ORTA</text>
+  <text x="22" y="366" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:11-11</text>
+  <text x="22" y="385" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: "Yüklenici, hizmeti sözleşmede belirtilen süre içinde ifa etmek zorundadır."</text>
+  <text x="22" y="404" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: tr_zorundadir</text>
+  <text x="22" y="423" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0004] ZORUNLU · aktör: Yüklenici · güven: ORTA</text>
+  <text x="22" y="442" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:12-12</text>
+  <text x="22" y="461" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: "Yüklenici, çalıştırdığı personelin sigorta primlerini ödemelidir."</text>
+  <text x="22" y="480" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: tr_melidir</text>
+  <text x="22" y="499" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0005] ZORUNLU · aktör: İdare · güven: ORTA</text>
+  <text x="22" y="518" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:13-13</text>
+  <text x="22" y="537" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: "İdare, hizmet bedelini aylık olarak ödemelidir."</text>
+  <text x="22" y="556" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: tr_melidir</text>
+  <text x="22" y="575" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0007] ZORUNLU · aktör: Yüklenici · güven: ORTA</text>
+  <text x="22" y="594" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:18-18</text>
+  <text x="22" y="613" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: "Yüklenici, personel listesini her ayın ilk günü teslim etmelidir."</text>
+  <text x="22" y="632" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: tr_melidir</text>
+  <text x="22" y="651" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0008] OPSİYONEL · aktör: İdare · güven: ORTA</text>
+  <text x="22" y="670" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:21-21</text>
+  <text x="22" y="689" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: "İdare, hizmetin yapılıp yapılmadığını denetleyebilir."</text>
+  <text x="22" y="708" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: tr_abilir</text>
+  <text x="22" y="727" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0009] ZORUNLU · aktör: Yüklenici · güven: ORTA</text>
+  <text x="22" y="746" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:22-22</text>
+  <text x="22" y="765" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: "Yüklenici, denetim sırasında talep edilen bilgi ve belgeleri sunmalıdır."</text>
+  <text x="22" y="784" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: tr_melidir</text>
+  <text x="22" y="803" fill="#fbbf24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0012] OPSİYONEL · aktör: (metinde belirtilmemiş) · güven: DÜŞÜK · İNCELEME GEREKİYOR</text>
+  <text x="22" y="822" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:27-27</text>
+  <text x="22" y="841" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: "Ağır ihlaller halinde sözleşme feshedilebilir."</text>
+  <text x="22" y="860" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: tr_abilir</text>
+  <text x="22" y="879" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve"></text>
+  <text x="22" y="898" fill="#4ade80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">PARA (money) — 1 madde</text>
+  <text x="22" y="917" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0011] OPSİYONEL · aktör: (metinde belirtilmemiş) · tutar: 2500.00 TL · güven: ORTA</text>
+  <text x="22" y="936" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:26-26</text>
+  <text x="22" y="955" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: "Hizmetin eksik ifası halinde yükleniciye 2.500,00 TL ceza uygulanır."</text>
+  <text x="22" y="974" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: money</text>
+  <text x="22" y="993" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve"></text>
+  <text x="22" y="1012" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">TANIM (definition) — 2 madde</text>
+  <text x="22" y="1031" fill="#fbbf24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0001] — · aktör: (metinde belirtilmemiş) · güven: DÜŞÜK · İNCELEME GEREKİYOR</text>
+  <text x="22" y="1050" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:7-7</text>
+  <text x="22" y="1069" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: ""Hizmet", işbu şartnamede belirtilen temizlik faaliyetlerini ifade eder."</text>
+  <text x="22" y="1088" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: tr_tanim</text>
+  <text x="22" y="1107" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  • [DOC1-0002] — · aktör: İdare · güven: ORTA</text>
+  <text x="22" y="1126" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      atıf : hizmet_sartnamesi.txt:8-8</text>
+  <text x="22" y="1145" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      alıntı: ""İdare", hizmeti satın alan kamu kurumunu ifade eder."</text>
+  <text x="22" y="1164" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">      sinyal: tr_tanim</text>
+  <text x="22" y="1183" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve"></text>
+  <text x="22" y="1202" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">  … 36 madde daha var (--max-items ile sınırı artırın).</text>
+  <text x="22" y="1221" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve"></text>
+  <text x="22" y="1240" fill="#4ade80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">alıntı doğrulaması: 48/48 madde doğrulandı (kapsam %100)</text>
+</svg>
