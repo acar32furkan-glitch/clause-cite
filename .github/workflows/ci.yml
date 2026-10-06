@@ -1,0 +1,95 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    name: kalite (python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    # Matris yorumlayıcısını uv'ye sabitliyoruz: aksi hâlde `uv sync`/`uv run` .python-version'a
+    # dönüp venv'i yeniden kurar ve dev araçları düşer (ruff bulunamaz) ya da "3.13" işi
+    # sessizce 3.12 koşar.
+    env:
+      UV_PYTHON: ${{ matrix.python-version }}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+      - name: Bağımlılıkları kur
+        run: uv sync --all-extras --dev
+      - name: Yorumlayıcıyı ve araçları doğrula
+        run: |
+          uv run python -c "import sys; v=f'{sys.version_info[0]}.{sys.version_info[1]}'; assert v == '${{ matrix.python-version }}', f'beklenen ${{ matrix.python-version }}, gelen {v}'; print('python', v)"
+          uv run ruff --version
+      - name: ruff (lint)
+        run: uv run ruff check .
+      - name: ruff (format)
+        run: uv run ruff format --check .
+      - name: mypy (strict)
+        run: uv run mypy
+      - name: pytest + kapsam
+        run: uv run pytest --cov=clause_cite --cov-report=term-missing --cov-fail-under=85
+
+  demo:
+    name: çıkarım demo çalışıyor mu
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+      - run: uv sync --all-extras --dev
+
+      # `extract`, çözülemeyen madde veya alıntı invariyantı nedeniyle 1 koduyla çıkabilir; bu
+      # yüzden her adımda çıkış kodunu kendimiz doğrularız (aksi hâlde `bash -e` sağlıklı bir
+      # sonucu hata sayardı).
+      - name: Demo çıkarımı alıntı ve dosya:satır taşımalı
+        run: |
+          set +e
+          uv run clause-cite extract examples/data/*.txt --anchor 2026-01-01 --max-items 8 | tee /tmp/out.txt
+          code=${PIPESTATUS[0]}
+          set -e
+          if [ "$code" -ne 0 ] && [ "$code" -ne 1 ]; then
+            echo "HATA: beklenen çıkış kodu 0 veya 1, gelen $code" >&2
+            exit 1
+          fi
+          # kanıt: çıktıda dosya:satır aralığı ve birebir alıntı görünmeli
+          grep -qE '\.txt:[0-9]+-[0-9]+' /tmp/out.txt
+          grep -q '"' /tmp/out.txt
+          echo "demo çıktısı alıntı + dosya:satır biçimini taşıyor ✔"
+
+      - name: Alıntı invariyantı (verify) temiz olmalı
+        run: |
+          set +e
+          uv run clause-cite verify examples/data/*.txt
+          code=$?
+          set -e
+          if [ "$code" -ne 0 ]; then
+            echo "HATA: beklenen çıkış kodu 0, gelen $code" >&2
+            exit 1
+          fi
+
+      - name: Örnek belgeler değişmemeli (CI idempotent)
+        run: |
+          if ! git diff --quiet -- examples/; then
+            echo "HATA: demo, örnek belgeleri değiştirdi" >&2
+            git diff -- examples/
+            exit 1
+          fi
+          echo "örnek belgeler korunmuş ✔"
