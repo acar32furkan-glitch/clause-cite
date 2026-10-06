@@ -1,0 +1,57 @@
+name: Hata bildirimi / yanlış madde
+description: Çıkarılan bir madde kanıtsız ya da yanlış, veya gerçek bir madde kaçırıldı.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Teşekkürler! Bu CLI **kanıt** üzerine kuruludur: her madde birebir alıntı + `dosya:satır`
+        taşımak zorundadır. Lütfen belgenin ilgili bölümünü kısaltarak paylaşın.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Sorun türü
+      options:
+        - Yanlış madde (olmayan yükümlülük/termin çıkarıldı)
+        - Kaçırılan madde (var olan yükümlülük/termin atlandı)
+        - Alıntı invariyantı ihlali (maddenin alıntısı veya satır aralığı yanlış)
+        - Modality hatası (must/should/may yanlış veya birleştirilmiş)
+        - Çözülemeyen aktör/tarih (uydurulmuş değer)
+        - Çökme / beklenmeyen hata
+        - Diğer
+    validations:
+      required: true
+  - type: input
+    id: item
+    attributes:
+      label: İlgili madde türü ve modality
+      placeholder: "YÜKÜMLÜLÜK · ZORUNLU · belge.txt:12-14"
+  - type: textarea
+    id: source
+    attributes:
+      label: Kaynak metin (alıntı + dosya:satır)
+      placeholder: |
+        source: "Tedarikçi, teslimatı 30 gün içinde tamamlamak zorundadır."
+        location: sozlesme.txt:12-12
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Beklenen davranış ve gerekçe
+      placeholder: Bu cümle için TERMİN + ZORUNLU bekleniyordu çünkü "30 gün" göreli bir süre ifade ediyor.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Sürüm
+      placeholder: "clause-cite --version çıktısı"
+  - type: textarea
+    id: command
+    attributes:
+      label: Varsa komut ve çıktı
+      render: shell
+      placeholder: |
+        uv run clause-cite extract sozlesme.txt --anchor 2026-01-01 --json

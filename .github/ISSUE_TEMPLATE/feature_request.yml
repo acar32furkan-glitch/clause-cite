@@ -1,0 +1,44 @@
+name: Kalıp / tür önerisi
+description: Yeni bir sinyal kalıbı, madde türü veya CLI iş akışı önerin.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Hangi metin sınıfı yakalanmıyor?
+      placeholder: |
+        Örnek: "Belge 'en geç iki iş günü içinde' gibi bir süre ifade ediyor ama mevcut
+        kalıp bunu TERMİN olarak tanımıyor, BELİRSİZ bırakıyor."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Önerilen kalıp veya tür ve örnek girdi
+      placeholder: |
+        Sinyal (TR): "en geç", "içinde", "gün önce"
+        Sinyal (EN): "no later than", "within", "days prior"
+        Eşleme: TERMİN · modality: must
+    validations:
+      required: true
+  - type: dropdown
+    id: deterministic
+    attributes:
+      label: Bu ekleme deterministik olabilir mi? (ağ/LLM çağrısı gerektirir mi?)
+      options:
+        - "Evet, kalıp/veri ile yazılabilir"
+        - "Hayır, ağ veya LLM gerektirir"
+        - "Emin değilim"
+    validations:
+      required: true
+  - type: textarea
+    id: falsepositives
+    attributes:
+      label: Yanlış pozitif riski ve nasıl önlenir?
+      placeholder: Kalıbın emin olmadığında susması veya needs_review işaretlemesi için hangi koşul gerekli?
+  - type: textarea
+    id: invariant
+    attributes:
+      label: Alıntı invariyantı korunuyor mu?
+      placeholder: Bu kalıp her zaman birebir alıntı + dosya:satır üretebiliyor mu? Üretemiyorsa madde çıkarılmamalı.

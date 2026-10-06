@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Güvenlik açığı
+    url: https://github.com/acar32furkan-glitch/clause-cite/security/policy
+    about: Güvenlikle ilgili konuları herkese açık issue olarak açmayın; özel bildirim kullanın.
+  - name: Kural ve kalıp kataloğu
+    url: https://github.com/acar32furkan-glitch/clause-cite/blob/main/docs/rules.md
+    about: Hangi sinyalin hangi tür/modality'ye eşlendiğini ve öncelik kuralını burada bulabilirsiniz.
+  - name: Alıntı invariyantı (ADR)
+    url: https://github.com/acar32furkan-glitch/clause-cite/blob/main/docs/adr/0001-citation-invariant.md
+    about: Her maddenin neden birebir alıntı + dosya:satır taşımak zorunda olduğunu burada bulun.
